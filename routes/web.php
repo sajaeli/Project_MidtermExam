@@ -26,9 +26,9 @@ Route::get('/create-product', function () {
 
 Route::post('/store-product', function (Request $request) {
     $product = new Product();
-    $product->product_name = $request->product_name;
-    $product->product_price = $request->product_price;
-    $product->product_qty = $request->product_qty;
+    $product->name = $request->name;
+    $product->price = $request->price;
+    $product->quantity = $request->quantity;
     $product->save();
     return redirect('/all-products');
 })->name('store-product');
@@ -46,9 +46,9 @@ Route::get('/edit-product/{id}', function ($id) {
 });
 Route::post('/update-product/{id}', function (Request $request,$id) {
     $product =  Product::find($id);
-    $product->product_name = $request->product_name;
-    $product->product_price = $request->product_price;
-    $product->product_qty = $request->product_qty;
+    $product->name = $request->name;
+    $product->price = $request->price;
+    $product->quantity = $request->quantity;
     $product->save();
     return redirect('/all-products');
 })->name('update-product');
