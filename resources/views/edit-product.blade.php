@@ -25,15 +25,15 @@
                     
                     <div class="form-group">
                         <label for="name">Product Name:</label>
-                        <input type="text" class="form-control" name="product_name" value="{{$product->product_name}}" />
+                        <input type="text" class="form-control" name="name" value="{{$product->name}}" />
                     </div>
                     <div class="form-group">
                         <label for="price">Product Price :</label>
-                        <input type="text" class="form-control" name="product_price" value="{{$product->product_price}}" />
+                        <input type="text" class="form-control" name="price" value="{{$product->price}}" />
                     </div>
                     <div class="form-group">
                         <label for="quantity">Product Quantity:</label>
-                        <input type="text" class="form-control" name="product_qty" value="{{$product->product_qty}}"/>
+                        <input type="text" class="form-control" name="quantity" value="{{$product->quantity}}"/>
                     </div>
                     <button type="submit" class="btn btn-primary">Update</button>
                 </form>
