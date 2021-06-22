@@ -32,9 +32,9 @@
             @foreach($products as $key=>$value)
             <tr>
                 <td>{{++$key}}</td>
-                <td>{{$value->product_name}}</td>
-                <td>{{$value->product_price}}$</td>
-                <td>{{$value->product_qty}}</td>
+                <td>{{$value->name}}</td>
+                <td>{{$value->price}}$</td>
+                <td>{{$value->quantity}}</td>
                 <td>
                     <a class="btn btn-info" href="{{url('/edit-product/'.$value->id)}}">Edit</a>
 
