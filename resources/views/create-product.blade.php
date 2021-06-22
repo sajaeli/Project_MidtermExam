@@ -24,15 +24,15 @@
                     @csrf
                     <div class="form-group">
                         <label for="name">Product Name:</label>
-                        <input type="text" class="form-control" name="product_name" />
+                        <input type="text" class="form-control" name="name" />
                     </div>
                     <div class="form-group">
                         <label for="price">Product Price :</label>
-                        <input type="text" class="form-control" name="product_price" />
+                        <input type="text" class="form-control" name="price" />
                     </div>
                     <div class="form-group">
                         <label for="quantity">Product Quantity:</label>
-                        <input type="text" class="form-control" name="product_qty" />
+                        <input type="text" class="form-control" name="quantity" />
                     </div>
                     <button type="submit" class="btn btn-primary">Add</button>
                 </form>
